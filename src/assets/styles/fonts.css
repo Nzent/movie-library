@@ -13,3 +13,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("@/assets/fonts/Inter-Regular.rrf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
