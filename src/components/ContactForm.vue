@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import FormField from './Widgets/FormField.vue';
 import FormFieldTextArea from './Widgets/FormFieldTextArea.vue';
-import FormFieldCheckbox from './Widgets/FormFieldCheckbox.vue';
 import PrimaryButton from './Widgets/PrimaryButton.vue';
 
 const firstName = ref('')
