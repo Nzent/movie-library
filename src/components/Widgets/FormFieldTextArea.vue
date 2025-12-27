@@ -54,5 +54,6 @@ textarea {
     border: none;
     background-color: #3C3C3C;
     border-radius: 4px;
+    resize: vertical;
 }
 </style>

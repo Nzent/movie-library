@@ -1,31 +1,47 @@
 @font-face {
   font-family: "DIN Alternate";
-  src: url("@/assets/fonts/DINAlternate-Bold.rrf") format("ttf");
+  src: url("@/assets/fonts/DINAlternate-Bold.rrf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DIN Alternate';
-  src: url("@/assets/fonts/DINAlternate-Bold.rrf") format("ttf");
+  font-family: "DIN Alternate";
+  src: url("@/assets/fonts/DINAlternate-Bold.rrf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url("@/assets/fonts/Inter-Regular.rrf") format("ttf");
+  font-family: "Inter";
+  src: url("@/assets/fonts/Inter-Regular.rrf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("@/assets/fonts/OpenSans-Regular.rrf") format("ttf");
+  font-family: "Inter";
+  src: url("@/assets/fonts/Inter-Medium.rrf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("@/assets/fonts/OpenSans-Regular.rrf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("@/assets/fonts/OpenSans-Bold.rrf") format("truetype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

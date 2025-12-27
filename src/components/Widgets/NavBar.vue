@@ -61,6 +61,9 @@
     column-gap: 2rem;
 }
 a{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
 }
 </style>

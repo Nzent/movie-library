@@ -33,6 +33,7 @@
 }
 
 .paragraph {
+    color: #B7B7B7;
     max-width: 527px;
     text-align: left;
     font-size: 20px;

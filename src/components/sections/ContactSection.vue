@@ -58,7 +58,7 @@ import ContactForm from '../ContactForm.vue';
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    color: #FFFFFF;
+    color: #B7B7B7;
     margin-top: 8px;
 }
 

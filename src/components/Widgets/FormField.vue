@@ -40,6 +40,7 @@ function onInput(event: Event) {
 }
 
 label {
+    color: #B7B7B7;
     font-family: 'Open Sans', sans-serif;
     font-size: 18.29px;
     line-height: 1;

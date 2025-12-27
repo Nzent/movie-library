@@ -26,12 +26,12 @@ const tos = ref('')
             <FormField label="Email" v-model="email" required />
             <FormField label="Telephone" v-model="telephone" required />
             <FormFieldTextArea label="Message" v-model="message" />
-            <div style="font-family: 'Open Sans', sans-serif; text-align: left; font-size: 18.29px; color: #FFFFFF;">
+            <div style="font-family: 'Open Sans', sans-serif; text-align: left; font-size: 18.29px; color: #B7B7B7;">
                 * required fields
             </div>
             <!-- tos fields -->
             <div class="tos-field">
-                <input type="checkbox" v-model="tos" class="tos-input" style="margin-right: 8px;" />
+                <input type="checkbox" v-model="tos" class="tos-input" style="margin-right: 20px;" />
 
                 <span class="tos">I agree to the <a href="http://"
                         style="font-weight: 700; text-decoration:underline;">Terms & Conditions</a></span>
