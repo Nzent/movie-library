@@ -1,10 +1,13 @@
 <template>
- <section class="main-section">asd</section>
+    <img src="/images/landing.jpg" alt="" class="carousel-images">
 </template>
 
 <style scoped>
-.main-section {
-    background-color: aqua;
-    height: 100vh;
+.carousel-images {
+    width: 100%;
+    object-fit: cover;
+    height: 622px;
+    object-position: 50% 100%;
 }
+
 </style>
