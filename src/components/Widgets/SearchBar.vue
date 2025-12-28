@@ -61,13 +61,9 @@ const handleSearch = async () => {
 }
 const handleAddShow = (show: Show['show']) => {
     showsStore.addShow(show)
-
-    // Optional: Give user feedback
     alert(`Added: ${show.name}`)
-
-    // Optional: Clear search after adding (uncomment if you want this)
-    // searchQuery.value = ''
-    // shows.value = []
+    searchQuery.value = ''
+    shows.value = []
 }
 </script>
 
