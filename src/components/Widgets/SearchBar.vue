@@ -41,7 +41,7 @@ const handleSearch = async () => {
 
         try {
             const response = await fetch(
-                `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(searchQuery.value)}`
+                `${import.meta.env.VITE_MOVIES_API}/search/shows?q=${encodeURIComponent(searchQuery.value)}`
             )
 
             if (!response.ok) {
