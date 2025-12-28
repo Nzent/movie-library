@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useShowsStore } from '../../store/PiniaStore'
 
 interface Show {
     show: {
@@ -23,7 +24,7 @@ const shows = ref<Show[]>([])
 const loading = ref(false)
 const error = ref<string | null>(null)
 let debounceTimeout: ReturnType<typeof setTimeout> | null = null
-
+const showsStore = useShowsStore()
 const handleSearch = async () => {
     if (debounceTimeout) {
         clearTimeout(debounceTimeout)
@@ -58,6 +59,16 @@ const handleSearch = async () => {
         }
     }, 300)
 }
+const handleAddShow = (show: Show['show']) => {
+    showsStore.addShow(show)
+
+    // Optional: Give user feedback
+    alert(`Added: ${show.name}`)
+
+    // Optional: Clear search after adding (uncomment if you want this)
+    // searchQuery.value = ''
+    // shows.value = []
+}
 </script>
 
 <template>
@@ -75,7 +86,7 @@ const handleSearch = async () => {
 
         <div v-if="shows.length > 0" class="results">
             <ul class="shows-list">
-                <li v-for="show in shows" :key="show.show.id" class="show-item">
+                <li v-for="show in shows" :key="show.show.id" class="show-item" @click="handleAddShow(show.show)">
                     <div>
                         <img v-if="show.show.image" :src="show.show.image.medium" :alt="show.show.name"
                             class="show-image" />
