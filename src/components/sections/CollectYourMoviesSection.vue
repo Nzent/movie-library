@@ -55,6 +55,7 @@ hr {
     display: flex;
     justify-content: space-between;
 }
+
 @media (max-width: 1444px) {
     .grid-section {
         display: grid;
@@ -90,6 +91,7 @@ hr {
     }
 
 }
+
 @media (max-width: 810px) {
     .grid-section {
         grid-template-columns: repeat(1, 1fr);
