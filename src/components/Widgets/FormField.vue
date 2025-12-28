@@ -25,8 +25,7 @@ function onInput(event: Event) {
             <span v-if="required" class="required">*</span>
         </label>
 
-        <input :id="id" type="'text'" :value="modelValue" :required="required" @input="onInput"
-            class="input" />
+        <input :id="id" type="'text'" :value="modelValue" :required="required" @input="onInput" class="input" />
     </div>
 </template>
 

@@ -55,4 +55,44 @@ hr {
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 1444px) {
+    .grid-section {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1036px) {
+    .grid-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 820px) {
+    .main-section {
+        padding: 63px 43px;
+    }
+
+    .search-section {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: space-between;
+    }
+
+    .grid-section {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
+
+}
+@media (max-width: 810px) {
+    .grid-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 </style>

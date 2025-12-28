@@ -35,3 +35,9 @@ a:hover {
   text-decoration: underline;
   color: inherit;
 }
+
+@media (max-width: 820px) {
+  body {
+    margin: 0px;
+  }
+}

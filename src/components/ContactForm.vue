@@ -17,7 +17,7 @@ const tos = ref('')
         <!-- names -->
         <div class="names-section">
             <!-- fname -->
-            <FormField label="First Name" style="margin-right: 40px;" v-model="firstName" required />
+            <FormField label="First Name" style="margin-right: 20px;" v-model="firstName" required />
             <!-- lname -->
             <FormField label="Last Name" style="" v-model="lastName" required />
         </div>
@@ -45,7 +45,9 @@ const tos = ref('')
 
 <style scoped>
 .names-section {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     column-gap: 20px;
 }
 

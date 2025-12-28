@@ -1,5 +1,4 @@
     <template>
-
         <article class="card-container">
             <div class="close-button">
                 <img src="/x.svg" alt="Close button">
@@ -12,56 +11,77 @@
                     nonumy eirmod tempor invidunt ut…</p>
             </div>
         </article>
-        
+
     </template>
 
-    <style scoped>
-    .cover-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+<style scoped>
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 427px;
+    height: 770px;
+}
+
+.content-section {
+    /* display: none; */
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: #3C3C3C;
+}
+
+.content-title {
+    font-family: "DIN Alternate", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+}
+
+.content-paragraph {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 18.29px;
+    line-height: 150%;
+    letter-spacing: -1.1%;
+}
+
+.close-button {
+    background-color: #1D1D1DE6;
+    padding: 20px;
+    position: absolute;
+    margin: 10px;
+    right: 1%;
+    top: 1%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1566px) {
     .card-container {
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 427px;
+        width: 400px;
         height: 770px;
     }
+}
 
-    .content-section {
-        /* display: none; */
-        padding: 20px;
-        color: #FFFFFF;
-        background-color: #3C3C3C;
+@media (max-width: 820px) {
+    .card-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 349px;
+        height: 770px;
     }
-
-    .content-title {
-        font-family: "DIN Alternate", sans-serif;
-        font-weight: 400;
-        text-align: left;
-        font-size: 32px;
-        line-height: 150%;
-        letter-spacing: -1.1%;
-    }
-
-    .content-paragraph {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        text-align: left;
-        font-size: 18.29px;
-        line-height: 150%;
-        letter-spacing: -1.1%;
-    }
-
-    .close-button {
-        background-color: #1D1D1DE6;
-        padding: 20px;
-        position: absolute;
-        margin: 10px;
-        right: 1%;
-        top: 1%;
-        cursor: pointer;
-    }
-    </style>
+}
+</style>

@@ -67,4 +67,58 @@ import ContactForm from '../ContactForm.vue';
     display: flex;
     column-gap: 8%;
 }
+
+@media (max-width: 1408px) {
+    .main-section {
+        padding: 51px 43px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-section {
+        margin-top: 50px;
+        display: flex;
+        column-gap: 4%;
+    }
+
+    .location-iframe {
+        width: 600px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .location-iframe {
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+    }
+    .bottom-section {
+        padding: 51px 43px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .main-section {
+        padding: 51px 43px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-section {
+        padding: 51px 43px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .location-iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
 </style>

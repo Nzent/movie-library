@@ -90,4 +90,30 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 1000px) {
+    .top-section {
+        padding: 51px 43px;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .address-section {
+        text-align: center;
+    }
+
+    .social-media-section {
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .bottom-section {
+        padding: 51px 43px;
+        flex-direction: column;
+        row-gap: 20px;
+        line-height: 1.5;
+        align-items: center;
+    }
+}
 </style>

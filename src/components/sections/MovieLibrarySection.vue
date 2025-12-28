@@ -11,7 +11,7 @@
 
 <style scoped>
 .main-section {
-    
+
     margin: 0px;
     display: flex;
     justify-content: start;
@@ -39,5 +39,19 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
+}
+
+
+@media (max-width: 820px) {
+    .main-section {
+        margin: 0px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        background-color: #0F0F0F;
+        padding: 63px 43px;
+        max-height: 307px;
+    }
 }
 </style>
