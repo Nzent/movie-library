@@ -1,18 +1,39 @@
-    <template>
-        <article class="card-container">
-            <div class="close-button">
-                <img src="/x.svg" alt="Close button">
-            </div>
-            <img src="/images/card.jpg" class="cover-image" alt="Card image">
-            <div class="content-section">
-                <h2 class="content-title">Batman Returns</h2>
-                <p class="content-paragraph">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut…</p>
-            </div>
-        </article>
+<script setup lang="ts">
+import { computed } from 'vue';
 
-    </template>
+interface CardProps {
+    id: number
+    title: string
+    description: string
+    image?: string | null
+}
+
+const props = defineProps<CardProps>()
+const emit = defineEmits<{
+    remove: [id: number]
+}>()
+
+const cleanDescription = computed(() =>
+    props.description.replace(/<[^>]*>/g, '')
+)
+
+const handleRemove = () => {
+    emit('remove', props.id)
+}
+</script>
+
+<template>
+    <article class="card-container">
+        <div class="close-button" @click="handleRemove">
+            <img src="/x.svg" alt="Close button">
+        </div>
+        <img :src="image || ''" class="cover-image" :alt="title">
+        <div class="content-section">
+            <h2 class="content-title">{{ title }}</h2>
+            <p class="content-paragraph">{{ cleanDescription }}</p>
+        </div>
+    </article>
+</template>
 
 <style scoped>
 .cover-image {
@@ -30,7 +51,6 @@
 }
 
 .content-section {
-    /* display: none; */
     padding: 20px;
     color: #FFFFFF;
     background-color: #3C3C3C;
@@ -43,6 +63,12 @@
     font-size: 32px;
     line-height: 150%;
     letter-spacing: -1.1%;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .content-paragraph {
@@ -52,6 +78,12 @@
     font-size: 18.29px;
     line-height: 150%;
     letter-spacing: -1.1%;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .close-button {
@@ -62,8 +94,12 @@
     right: 1%;
     top: 1%;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
+.close-button:hover {
+    background-color: #f44336;
+}
 
 @media (max-width: 1566px) {
     .card-container {
